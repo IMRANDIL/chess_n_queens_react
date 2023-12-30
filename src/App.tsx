@@ -7,6 +7,7 @@ import Chessboard from './components/Chessboard';
 function App() {
   const [solution, setSolution] = useState(null);
   const handleSolveClick = () => {
+    console.log('solution>>>>>>>>>>>>>>', solution)
     solveNQueens(8, setSolution); // Change the board size if needed
   };
   return (
